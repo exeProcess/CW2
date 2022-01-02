@@ -3,7 +3,7 @@ const app = express()
 const mongoose = require("mongoose")
 const morgan = require("morgan")
 const dotenv = require("dotenv")
-
+const cors = require("cors")
 const route = require("./routers/router");
 const user = require("./models/User")
 const userRoute = require("./routers/userRoute")
@@ -22,7 +22,7 @@ mongoose.connect(process.env.DB_URL).then(() => {
 ////////////////////
 app.use(express.json())
 app.use(morgan("common"))
-
+app.use(cors())
 app.use("/", route)
 app.use("/", userRoute)
 app.use("/", authRoute)

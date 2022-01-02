@@ -29,25 +29,25 @@ lessonRouter.get("/lesson", async (req, res) => {
     }*/
     const lesson = [
         {
-            "topic": "maths",
+            "title": "maths",
             "location": "dubai",
             "price": 100
 
         },
         {
-            "topic": "maths",
+            "title": "maths",
             "location": "London",
             "price": 80
 
         },
         {
-            "topic": "maths",
+            "title": "maths",
             "location": "Liverpool",
             "price": 90
 
         },
         {
-            "topic": "maths",
+            "title": "maths",
             "location": "Oxford",
             "price": 120
 
