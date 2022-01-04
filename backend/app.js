@@ -23,11 +23,12 @@ mongoose.connect(process.env.DB_URL).then(() => {
 app.use(express.json())
 app.use(morgan("common"))
 //app.use(cors())
+//invoking the use property to register middleware on express server
 app.use("/", route)
 app.use("/", userRoute)
 app.use("/", authRoute)
 app.use("/", lessonRouter)
-
-app.listen(9000, () => {
+let port = process.env.PORT || 9000
+app.listen(port, () => {
     console.log("app running")
 })
