@@ -4,10 +4,10 @@ const mongoClient = require("mongodb").MongoClient
 const morgan = require("morgan")
 const dotenv = require("dotenv")
 //const cors = require("cors")
-const route = require("./backend/routers/router");
-const userRoute = require("./backend/routers/userRoute")
+const route = require("./routers/router");
+const userRoute = require("./routers/userRoute")
 //const authRoute = require("./routers/authRoute")
-const lessonRouter = require("./backend/routers/lessonRoute")
+const lessonRouter = require("./routers/lessonRoute")
 let db;
 dotenv.config()
 
