@@ -2,9 +2,9 @@
   "name": "cw2",
   "version": "1.0.0",
   "description": "",
-  "main": "backend/app.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon backend/app.js"
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
